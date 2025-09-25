@@ -305,7 +305,7 @@ FROM employees e
 LEFT JOIN departments d ON e.dept_id = d.dept_id;
 ```
 
-✅ Returns all employees, even if they don't belong to any department
+Returns all employees, even if they don't belong to any department
 (NULL for dept_name).
 
 ------------------------------------------------------------------------
@@ -316,7 +316,7 @@ LEFT JOIN departments d ON e.dept_id = d.dept_id;
     right.\
 -   **RIGHT JOIN**: All rows from the right table + matched rows from
     the left.\
-    👉 They are mirror images of each other.
+    They are mirror images of each other.
 
 ------------------------------------------------------------------------
 
@@ -425,7 +425,7 @@ FROM employees e
 INNER JOIN departments d USING (dept_id);
 ```
 
-👉 `USING` can only be used when both tables have the same column name.
+`USING` can only be used when both tables have the same column name.
 
 ------------------------------------------------------------------------
 
